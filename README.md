@@ -14,6 +14,7 @@ config](https://github.com/alexander-born/.cfg/blob/07644649215a15e7cecdef026514
 - bazel build doesn't output generated files to the source tree so they are not checked into source code
 - trying to find a way to generate the grpc related code, found: https://github.com/grpc/grpc, also this blog https://grpc.io/blog/bazel-rules-protobuf/#23-protobuf-definitions that
 has more info
+- maybe I don't understand the relationship between grpc and protobuf yet
 #### having a look at the generated code:
 ```python
 # -*- coding: utf-8 -*-
