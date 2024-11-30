@@ -1,0 +1,10 @@
+load("@rules_python//python:proto.bzl", "py_proto_library")
+proto_library(
+    name="prolib",
+    srcs=["message.proto"]
+)
+
+py_proto_library(
+    name="mylib",
+    deps = [":prolib"]
+)
