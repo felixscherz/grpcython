@@ -1,6 +1,8 @@
-# grpc built with bazel
+# grpc using different approaches to a monorepo
 
-## 2024/11/30
+## 2024/12/01 - simpler solutions first
+
+## 2024/11/30 - trying out bazel
 
 - difficulty figuring out which rules to use, this link https://registry.bazel.build/modules/protobuf helped a bit
 - turns out `py_proto_library` is part of `rules_python` (at least since verison `0.40.0`)
