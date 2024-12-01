@@ -2,6 +2,14 @@
 
 ## 2024/12/01 - simpler solutions first
 
+- start with `uv` workspaces
+- trying to compile proto files when building a python distribution turned out to be a bit tricky
+- `grpcio-tools` provides a setuptools command that can be used to automatically create stubs from the source tree
+- this requires dealing with python package data to some extend
+- python considers files tracked by git as part of package data as long as they are part of the source tree
+- otherwise they need to be included explicitly using `package_data` directive of `setup`
+
+
 ## 2024/11/30 - trying out bazel
 
 - difficulty figuring out which rules to use, this link https://registry.bazel.build/modules/protobuf helped a bit
