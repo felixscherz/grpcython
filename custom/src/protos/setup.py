@@ -11,10 +11,11 @@ class BuildHook(build.build):
 
 
 setuptools.setup(
-    include_package_data=True,
-        package_data = {"": ["*.proto"]},
+    # these only need to be set if the files are not part of version control i.e. not tracked by git
+    # include_package_data=True,
+    # package_data={"": ["*.proto"]},
     cmdclass={
         "build_proto_modules": grpc_tools.command.BuildPackageProtos,
         "build": BuildHook,
-    }
+    },
 )
